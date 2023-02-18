@@ -1,0 +1,90 @@
+<!-- HTML CODE COMES HERE -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MULTISTEP FORM</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="main-cnt">
+
+    <main>
+
+      <section class="selection-prs">
+        <ul class="counts-steps">
+          <li class="steps">1 <p class="text">
+              Step 1
+              Your info
+            </p>
+          </li>
+          <li class="steps">2 <p class="text">
+              Step 2
+              Select plan
+            </p>
+          </li>
+          <li class="steps">3 <p class="text">
+              Step 3
+              Add-ons
+            </p>
+          </li>
+          <li class="steps">4 <p class="text">
+              Step 4
+              Summary
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="action-prs">
+        <!-- JS for Dynamism -->
+        <!-- Where all the details would be. -->
+        <section class="header">
+          <h1>Personal info</h1>
+          <p> Please provide your name, email address, and phone number.</p>
+        </section>
+
+        <section class="form-cnt">
+          <!-- WHERE THE FORM IS. -->
+          <form action="#-tobackend" method="post">
+            <fieldset>
+              <legend><label for="name">Name</label></legend>
+              <span class="error-message">This field is required</span>
+              <input type="text" name="name" id="name" class="name input-frm" placeholder="e.g. Stephen King">
+            </fieldset>
+
+            <fieldset>
+              <legend><label for="Email">Email Address</label></legend>
+              <span class="error-message">This field is required</span>
+              <input type="email" class="Email input-frm" name="Email" placeholder="e.g. stephenking@lorem.com">
+            </fieldset>
+
+            <fieldset>
+              <legend><label for="Phone">Phone Number</label></legend>
+              <span class="error-message">This field is required</span>
+              <input type="tel" name="Phone" id="Phone" class="Phone input-frm" placeholder="e.g. +1 234 567 890"
+                pattern="">
+            </fieldset>
+          </form>
+        </section>
+
+        <section class="btn-next">
+          <button>Next Step</button>
+        </section>
+
+      </section>
+
+      <!-- END-OF-BORDER OF THE WHOLE PAGE CONTAINER -->
+    </main>
+  </div>
+</body>
+
+<!-- THE JAVASCRIPT FILE FOR THIS PROJECT -->
+<script src="./TypeScript/Script.js"></script>
+
+</html>
